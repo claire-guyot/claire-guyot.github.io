@@ -1,0 +1,57 @@
+/*Commentaires*/
+body{
+  font-family: 'Merriweather', serif;
+}
+
+
+
+.Header {
+}
+
+
+.logo{
+height: 75px;
+}
+
+
+.Menu{
+
+}
+
+.Projets_groupe{
+
+}
+
+.Projet{
+
+}
+
+.Projet_titre{
+
+}
+
+.Projet_vignette {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+
+.Footer{
+
+}
+
+.Titre
+{
+
+}
+.Infos_fr{
+
+}
+.Infos_en
+{
+  font-style: italic;
+}
+.Contact
+{
+
+}
