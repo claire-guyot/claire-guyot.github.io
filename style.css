@@ -1,57 +1,141 @@
 /*Commentaires*/
+html * {
+  box-sizing: border-box;
+    }
+
 body{
+max-width: 75%;
+margin:auto;
   font-family: 'Merriweather', serif;
 }
 
-
+/***********INDEX*****************/
 
 .Header {
+margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-
 .logo{
+  position: relative; right:8%;
 height: 75px;
 }
 
-
 .Menu{
+position : absolute; top:75px; right:8%;
+font-family: 'Alegreya Sans', sans-serif;
+font-size: 18px;
+font-weight: 700;}
 
-}
 
 .Projets_groupe{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
 
+.Projets_groupe_colonne {
+  flex : 0 0 30%;
 }
 
 .Projet{
-
+  padding: 10px;
 }
 
 .Projet_titre{
-
 }
 
 .Projet_vignette {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 100%;
+  height:auto;
 }
-
 
 .Footer{
 
 }
 
-.Titre
+/**********PAGES PROJETS******************/
+
+.titre_page_projet{
+  max-width: 75%;
+  margin:auto;
+  font-family: 'Alegreya Sans', sans-serif;
+    font-size: 20px;
+font-weight: 800;
+}
+
+.texte_projet_fr{
+  max-width: 75%;
+  margin:auto;
+  font-family: 'Alegreya Sans', sans-serif;
+font-size: 16px;
+font-weight: 500;
+}
+
+.texte_projet_en{
+  max-width: 75%;
+  margin:auto;
+  font-family: 'Alegreya Sans', sans-serif;
+    font-size: 16px;
+    font-weight:400;
+}
+
+.images_projets{
+  max-width: 75%;
+  margin:auto;
+}
+
+/**********CONTACT******************/
+
+.Titre_contact
 {
+  max-width: 60%;
+  margin:auto;
+  font-family: 'Alegreya Sans', sans-serif;
+    font-size: 20px;
+font-weight: 800;
+
 
 }
 .Infos_fr{
-
+  max-width: 60%;
+  margin:auto;
+  font-family: 'Alegreya Sans', sans-serif;
+font-size: 16px;
+font-weight: 500;
 }
 .Infos_en
 {
-  font-style: italic;
+  max-width: 60%;
+  margin:auto;
+  font-family: 'Alegreya Sans', sans-serif;
+    font-size: 16px;
+    font-weight:400;
 }
 .Contact
-{
+{max-width: 60%;
+margin:auto;
+font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
 
+
+}
+
+.separateur_contact
+{
+  max-width: 60%;
+  margin:auto;
+  font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.separateur_projets
+{
+  max-width: 75%;
+  margin:auto;
+  font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
 }
