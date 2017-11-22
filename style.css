@@ -20,28 +20,32 @@ body.english .txt-fr {
 /***********INDEX*****************/
 
 .Header {
-  max-width: 75%;
+  max-width: 80%;
 margin: 50px auto;
 display: flex;
 }
 
 .logo{
-height: 75px;
+height: 60px;
 }
 
 .Menu{
 font-family: 'Alegreya Sans', sans-serif;
-font-size: 18px;
+font-size: 14px;
 font-weight: 700;
 margin-left: auto;
     display: flex;
     align-items: center;
+    text-transform: uppercase;
 }
 .lang_selector {
   margin-left: 16px;
+  font-weight: 400;
+
 }
 .lang-en{
   margin-left: auto;
+  font-weight: 400;
 
   cursor: pointer;
 
@@ -49,7 +53,7 @@ margin-left: auto;
 
 .lang-fr{
   margin-left: auto;
-
+  font-weight: 400;
   cursor: pointer;
 
 }
@@ -71,7 +75,7 @@ margin: auto;
   position: absolute;
   top: 20px;
   left: 20px;
-  bottom: 20px;
+  bottom: 25px;
   right: 20px;
   opacity: 0;
   background: rgba(0,0,0,0.5);
@@ -118,26 +122,35 @@ a {
 /**********PAGES PROJETS******************/
 
 .bloc_texte_projets{
-  width: 25%;
-  max-width: 300px;
+  width: 30%;
+  max-width: 400px;
   margin:10px;
-  background: white;
-  position: fixed;top:150px; right:30px;
+  position: fixed;top:80px; right:80px;
   padding:16px;
 }
 
 .bloc_texte_projets .bouton {
   display: block;
+  position: fixed;top:80px; left:60%;
+
+  font-family: 'Alegreya Sans', sans-serif;
+font-size: 40px;
+  font-weight: 300;
+  cursor: pointer;
+
 }
 
 .bloc_texte_projets .bouton::after {
   display: block;
   content: "+";
+
 }
 
 .bloc_texte_projets.ouvert .bouton::after {
   display: block;
-  content: "-";
+  position: fixed;top:80px; left:60%;
+  content: "_";
+
 }
 
 .bloc_texte_projets .contenu {
@@ -163,16 +176,16 @@ a {
 }
 
 .texte_projet_fr{
-  font-family: 'Alegreya Sans', sans-serif;
-font-size: 16px;
-font-weight: 500;
+  font-family: 'Alegreya', serif;
+font-size: 15px;
+font-weight: 400;
 }
 
 .texte_projet_en{
 
-  font-family: 'Alegreya Sans', sans-serif;
-    font-size: 16px;
-    font-weight:400;
+  font-family: 'Alegreya', serif;
+font-size: 15px;
+font-weight: 400;
 
 
 }
@@ -194,51 +207,57 @@ font-weight: 500;
 }
 
 .images_projets img {
-  max-width: 100%;
+  max-width: 60%;
+  margin:10px;
 }
 
 /**********CONTACT******************/
 
 .Titre_contact
 {
-  max-width: 60%;
-  margin:auto;
-  font-family: 'Alegreya Sans', sans-serif;
-    font-size: 20px;
+  max-width: 30%;
+  margin-left:auto;
+  margin-right:auto;
+   font-family: 'Alegreya Sans', sans-serif;
+    font-size: 16px;
 font-weight: 800;
 
 
 }
 .Infos_fr{
-  max-width: 60%;
-  margin:auto;
-  font-family: 'Alegreya Sans', sans-serif;
+  max-width: 30%;
+  margin-left:auto;
+  margin-right:auto;
+  font-family: 'Alegreya', serif;
 font-size: 16px;
-font-weight: 500;
+font-weight: 400;
 }
 .Infos_en
 {
-  max-width: 60%;
-  margin:auto;
-  font-family: 'Alegreya Sans', sans-serif;
+  max-width: 30%;
+  margin-left:auto;
+  margin-right:auto;
+  font-family: 'Alegreya', serif;
     font-size: 16px;
     font-weight:400;
 }
 
 .Contact_fr
-{max-width: 60%;
-margin:auto;
-font-family: 'Alegreya Sans', sans-serif;
-  font-weight: 600;
+{  max-width: 30%;
+  margin-left:auto;
+  margin-right:auto;
+font-family: 'Alegreya', serif;
+  font-weight: 500;
   font-size: 16px;
 }
 
 .Contact_en
 {
-  max-width: 60%;
-margin:auto;
-font-family: 'Alegreya Sans', sans-serif;
-  font-weight: 600;
+  max-width: 30%;
+  margin-left:auto;
+  margin-right:auto;
+font-family: 'Alegreya', serif;
+  font-weight: 500;
   font-size: 16px;
 
 
@@ -246,9 +265,9 @@ font-family: 'Alegreya Sans', sans-serif;
 
 .separateur_contact
 {
-  max-width: 60%;
-  margin:auto;
-  font-family: 'Alegreya Sans', sans-serif;
+  max-width: 30%;
+  margin-left:auto;
+  margin-right:auto;
     font-weight: 900;
-    font-size: 16px;
+    font-size: 14px;
 }
