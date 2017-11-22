@@ -3,28 +3,55 @@ html * {
   box-sizing: border-box;
     }
 
-body{
-max-width: 75%;
-margin:auto;
+body {
+  margin:auto;
 }
 
+.txt-en {
+  display: none;
+}
+
+body.english .txt-en {
+  display:block;
+}
+body.english .txt-fr {
+  display:none;
+}
 /***********INDEX*****************/
 
 .Header {
-margin-top: 50px;
-  margin-bottom: 50px;
+  max-width: 75%;
+margin: 50px auto;
+display: flex;
 }
 
 .logo{
-  position: relative; right:8%;
 height: 75px;
 }
 
 .Menu{
-position : absolute; top:75px; right:8%;
 font-family: 'Alegreya Sans', sans-serif;
 font-size: 18px;
 font-weight: 700;
+margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.lang_selector {
+  margin-left: 16px;
+}
+.lang-en{
+  margin-left: auto;
+
+  cursor: pointer;
+
+}
+
+.lang-fr{
+  margin-left: auto;
+
+  cursor: pointer;
+
 }
 
 
@@ -32,14 +59,44 @@ font-weight: 700;
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
+max-width: 90%;
+margin: auto;
 }
 
 .Projets_groupe_colonne {
-  flex : 0 0 30%;
+  flex : 0 0 25%;
 }
 
-.Projet{
-  padding: 10px;
+.Projets_groupe_colonne .Projet_titre {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  background: rgba(0,0,0,0.5);
+  color:white;
+  text-align:center;
+  pointer-events: none;
+  padding: 16px;
+  transition: .5s;
+  margin:0;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Projet {
+  padding: 20px;
+  position: relative;
+}
+
+.Projet:hover .Projet_titre {
+  opacity:1;
 }
 
 .Projet_titre{
@@ -54,27 +111,55 @@ flex-wrap: wrap;
 
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
 /**********PAGES PROJETS******************/
 
-.images_projets{
-  margin:auto;
-  box-sizing: 30%;
-}
-
 .bloc_texte_projets{
-  max-width: 20%;
+  width: 25%;
+  max-width: 300px;
   margin:10px;
   background: white;
   position: fixed;top:150px; right:30px;
+  padding:16px;
+}
 
+.bloc_texte_projets .bouton {
+  display: block;
+}
 
+.bloc_texte_projets .bouton::after {
+  display: block;
+  content: "+";
+}
+
+.bloc_texte_projets.ouvert .bouton::after {
+  display: block;
+  content: "-";
+}
+
+.bloc_texte_projets .contenu {
+  display: none;
+}
+
+.bloc_texte_projets.ouvert .contenu {
+  display: block;
 }
 
 .titre_page_projet{
   font-family: 'Alegreya Sans', sans-serif;
-    font-size: 20px;
-font-weight: 800;
+  font-size: 20px;
+  font-weight: 800;
+  position: relative;
+}
 
+.titre_page_projet .bouton {
+  position: absolute;
+  right: 16px;
+  top: 0;
+  cursor: pointer;
 }
 
 .texte_projet_fr{
@@ -103,7 +188,14 @@ font-weight: 500;
 }
 
 
+.images_projets{
+  margin:auto;
+  max-width: 850px;
+}
 
+.images_projets img {
+  max-width: 100%;
+}
 
 /**********CONTACT******************/
 
@@ -132,8 +224,18 @@ font-weight: 500;
     font-size: 16px;
     font-weight:400;
 }
-.Contact
+
+.Contact_fr
 {max-width: 60%;
+margin:auto;
+font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.Contact_en
+{
+  max-width: 60%;
 margin:auto;
 font-family: 'Alegreya Sans', sans-serif;
   font-weight: 600;

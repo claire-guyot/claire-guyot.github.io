@@ -1,0 +1,48 @@
+
+  var bouton = document.querySelector('.bouton');
+  var contenu = document.querySelector('.bloc_texte_projets');
+  var langFr = document.querySelector('.lang-fr');
+  var langEn = document.querySelector('.lang-en');
+
+  if (bouton !== null) {
+    bouton.addEventListener('click', function() {
+      contenu.classList.toggle('ouvert');
+    });
+  }
+
+  window.addEventListener('load', function() {
+    if (window.location.href.indexOf('#en') !== -1) {
+      setEnglish();
+    }
+  });
+
+  langFr.addEventListener('click', setFrench);
+  langEn.addEventListener('click', setEnglish);
+
+  function setFrench() {
+    document.body.classList.remove('english');
+    removeEnglishUrlFragment();
+  }
+
+  function setEnglish() {
+    document.body.classList.add('english');
+    addEnglishUrlFragment();
+  }
+
+  function addEnglishUrlFragment() {
+    var a = document.querySelectorAll('a');
+    var arr = Array.from(a);
+    arr.forEach(a => {
+      if (a.getAttribute('href').indexOf('#en') === -1) {
+        a.setAttribute('href', a.getAttribute('href') + '#en');
+      }
+    });
+  }
+
+  function removeEnglishUrlFragment() {
+    var a = document.querySelectorAll('a');
+    var arr = Array.from(a);
+    arr.forEach(a => {
+      a.setAttribute('href', a.getAttribute('href').replace('#en', ''));
+    });
+  }
