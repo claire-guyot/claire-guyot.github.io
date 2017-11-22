@@ -6,7 +6,6 @@ html * {
 body{
 max-width: 75%;
 margin:auto;
-  font-family: 'Merriweather', serif;
 }
 
 /***********INDEX*****************/
@@ -25,7 +24,8 @@ height: 75px;
 position : absolute; top:75px; right:8%;
 font-family: 'Alegreya Sans', sans-serif;
 font-size: 18px;
-font-weight: 700;}
+font-weight: 700;
+}
 
 
 .Projets_groupe{
@@ -56,34 +56,54 @@ flex-wrap: wrap;
 
 /**********PAGES PROJETS******************/
 
-.titre_page_projet{
-  max-width: 75%;
+.images_projets{
   margin:auto;
+  box-sizing: 30%;
+}
+
+.bloc_texte_projets{
+  max-width: 20%;
+  margin:10px;
+  background: white;
+  position: fixed;top:150px; right:30px;
+
+
+}
+
+.titre_page_projet{
   font-family: 'Alegreya Sans', sans-serif;
     font-size: 20px;
 font-weight: 800;
+
 }
 
 .texte_projet_fr{
-  max-width: 75%;
-  margin:auto;
   font-family: 'Alegreya Sans', sans-serif;
 font-size: 16px;
 font-weight: 500;
 }
 
 .texte_projet_en{
-  max-width: 75%;
-  margin:auto;
+
   font-family: 'Alegreya Sans', sans-serif;
     font-size: 16px;
     font-weight:400;
+
+
 }
 
-.images_projets{
-  max-width: 75%;
-  margin:auto;
+
+.separateur_projets
+{
+
+  font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+
 }
+
+
+
 
 /**********CONTACT******************/
 
@@ -125,15 +145,6 @@ font-family: 'Alegreya Sans', sans-serif;
 .separateur_contact
 {
   max-width: 60%;
-  margin:auto;
-  font-family: 'Alegreya Sans', sans-serif;
-    font-weight: 900;
-    font-size: 16px;
-}
-
-.separateur_projets
-{
-  max-width: 75%;
   margin:auto;
   font-family: 'Alegreya Sans', sans-serif;
     font-weight: 900;
