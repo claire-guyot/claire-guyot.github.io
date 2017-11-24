@@ -5,8 +5,12 @@ html * {
 
 body {
   margin:auto;
+  size:100
 }
-
+.ensemble{
+  border-left:20px solid #222222;
+  border-right:20px solid #222222;
+}
 .txt-en {
   display: none;
 }
@@ -20,13 +24,22 @@ body.english .txt-fr {
 /***********INDEX*****************/
 
 .Header {
-  max-width: 80%;
-margin: 50px auto;
+
+  max-width: 90%;
 display: flex;
+justify-content: center;
+margin: auto;
+
+
+
 }
 
 .logo{
 height: 60px;
+margin:40px;
+margin-left:20px;
+
+
 }
 
 .Menu{
@@ -47,7 +60,8 @@ margin-left: auto;
   margin-left: auto;
   font-weight: 400;
 
-  cursor: pointer;
+  cursor:
+pointer;
 
 }
 
@@ -136,7 +150,7 @@ a {
   font-family: 'Alegreya Sans', sans-serif;
 font-size: 40px;
   font-weight: 300;
-  cursor: pointer;
+  cursor:url("images/curseurokpetit.png")30 15, pointer;
 
 
 }
@@ -157,6 +171,7 @@ font-size: 40px;
   display: none;
 }
 
+
 .bloc_texte_projets.ouvert .contenu {
   display: block;
   background-color:  aliceblue;
@@ -174,7 +189,7 @@ padding:10px;
   position: absolute;
   right: 16px;
   top: 0;
-  cursor: pointer;
+  cursor:   cursor:url("images/curseurokpetit.png")30 0, pointer;
 }
 
 .texte_projet_fr{
