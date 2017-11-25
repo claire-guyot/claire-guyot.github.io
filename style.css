@@ -1,19 +1,19 @@
 /*Commentaires*/
+
 html * {
   box-sizing: border-box;
-
-
-
-  }
+}
 
 body {
-  margin:auto;
-background:
+  margin: auto;
+  background:
 }
-.ensemble{
-  border-left:20px solid #222222;
-  border-right:20px solid #222222;
+
+.ensemble {
+  border-left: 20px solid #222222;
+  border-right: 20px solid #222222;
   min-height: 100vh;
+  z-index: 1000;
 }
 
 .txt-en {
@@ -21,73 +21,103 @@ background:
 }
 
 body.english .txt-en {
-  display:block;
+  display: block;
 }
+
 body.english .txt-fr {
-  display:none;
+  display: none;
 }
+
 /***********INDEX*****************/
 
 .Header {
+  width: 90%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
 
-  max-width: 90%;
-display: flex;
-justify-content: center;
-margin: auto;
+.logo {
+  height: 50px;
+  margin-top: 20px;
+  position: fixed;
+  left: 5%;
+  margin-left: 20px;
+  z-index: 1000;
+}
 
+.Menu {
+  font-family: 'Alegreya Sans', sans-serif;
+  height: 50px;
 
+  font-size: 14px;
+  position: fixed;
+  right: 5%;
+  font-weight: 700;
+  margin-left: auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  z-index: 1000;
 
 }
 
-.logo{
-height: 60px;
-margin:40px;
-margin-left:20px;
+.logo_index {
+  height: 50px;
+  margin-top: 20px;
+  left: 5%;
+  margin-left: 20px;
+  margin-right: auto;
 
+  z-index: 1000;
+}
+
+.Menu_index {
+  font-family: 'Alegreya Sans', sans-serif;
+  height: 50px;
+
+  font-size: 14px;
+  right: 5%;
+  font-weight: 700;
+  margin-left: auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  z-index: 1000;
 
 }
 
-.Menu{
-font-family: 'Alegreya Sans', sans-serif;
-font-size: 14px;
-font-weight: 700;
-margin-left: auto;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-}
+
 .lang_selector {
   margin-left: 16px;
   font-weight: 400;
-
-}
-.lang-en{
-  margin-left: auto;
-  font-weight: 400;
-
-  cursor:
-pointer;
-
 }
 
-.lang-fr{
+.lang-en {
   margin-left: auto;
   font-weight: 400;
   cursor: pointer;
-
 }
 
+.lang-fr {
+  margin-left: auto;
+  font-weight: 400;
+  cursor: pointer;
+}
 
-.Projets_groupe{
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-max-width: 90%;
-margin: auto;
+.Projets_groupe {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: auto;
 }
 
 .Projets_groupe_colonne {
-  flex : 0 0 25%;
+  flex: 0 0 25%;
 }
 
 .Projets_groupe_colonne .Projet_titre {
@@ -97,13 +127,13 @@ margin: auto;
   bottom: 25px;
   right: 20px;
   opacity: 0;
-  background: rgba(0,0,0,0.5);
-  color:white;
-  text-align:center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
   pointer-events: none;
   padding: 16px;
   transition: .5s;
-  margin:0;
+  margin: 0;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -112,78 +142,74 @@ margin: auto;
   align-items: center;
 }
 
-
 .Projet {
   padding: 20px;
   position: relative;
 }
 
 .Projet:hover .Projet_titre {
-  opacity:1;
+  opacity: 1;
 }
 
-.Projet_titre{
-}
+.Projet_titre {}
 
 .Projet_vignette {
   max-width: 100%;
-  height:auto;
+  height: auto;
 }
 
-.Footer{
-
-}
+.Footer {}
 
 a {
   color: black;
   text-decoration: none;
 }
+
 /**********PAGES PROJETS******************/
 
-.bloc_texte_projets{
+.bloc_texte_projets {
   width: 30%;
   max-width: 400px;
-  margin:10px;
-  position: fixed;top:80px; right:80px;
-  padding:16px;
+  margin: 10px;
+  position: fixed;
+  top: 80px;
+  right: 80px;
+  padding: 16px;
 }
 
 .bloc_texte_projets .bouton {
   display: block;
-  position: fixed;top:160px; left:60%;
-  margin:10px;
+  position: fixed;
+  top: 160px;
+  left: 60%;
+  margin: 10px;
   font-family: 'Alegreya Sans', sans-serif;
-font-size: 40px;
+  font-size: 40px;
   font-weight: 300;
-  cursor:url("images/curseurokpetit.png")30 15, pointer;
-
-
+  cursor: url("images/curseurokpetit.png")30 15, pointer;
 }
 
 .bloc_texte_projets .bouton::after {
   display: block;
   content: "+";
-
 }
 
 .bloc_texte_projets.ouvert .bouton::after {
   display: block;
   content: "-";
-
 }
 
 .bloc_texte_projets .contenu {
   display: none;
 }
 
-
 .bloc_texte_projets.ouvert .contenu {
   display: block;
-  background-color:  aliceblue;
-padding:10px;
+  background-color: aliceblue;
+  padding: 10px;
 }
 
-.titre_page_projet{
+.titre_page_projet {
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -194,106 +220,91 @@ padding:10px;
   position: absolute;
   right: 16px;
   top: 0;
-  cursor:   cursor:url("images/curseurokpetit.png")30 0, pointer;
+  cursor: cursor:url("images/curseurokpetit.png")30 0, pointer;
 }
 
-.texte_projet_fr{
+.texte_projet_fr {
   font-family: 'Alegreya', serif;
-font-size: 15px;
-font-weight: 400;
+  font-size: 15px;
+  font-weight: 400;
 }
 
-.texte_projet_en{
-
+.texte_projet_en {
   font-family: 'Alegreya', serif;
-font-size: 15px;
-font-weight: 400;
-
-
+  font-size: 15px;
+  font-weight: 400;
 }
 
-
-.separateur_projets
-{
-
+.separateur_projets {
   font-family: 'Alegreya Sans', sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-
+  font-weight: 700;
+  font-size: 12px;
 }
 
-
-.images_projets{
-  margin:auto;
+.images_projets {
+  margin: auto;
   max-width: 850px;
 }
 
 .images_projets img {
   max-width: 60%;
-  margin:10px;
+  margin: 10px;
 }
 
 /**********CONTACT******************/
 
-.Contact_texte{
+.Contact_texte {
   display: block;
   max-width: 30%;
-  background-color:  aliceblue;
-padding:10px;
-margin: auto;
+  background-color: aliceblue;
+  padding: 10px;
+  margin: auto;
+  margin-top: 5%;
 }
-.Titre_contact
-{
-  margin-left:auto;
-  margin-right:auto;
-   font-family: 'Alegreya Sans', sans-serif;
-    font-size: 16px;
-font-weight: 800;
 
-
+.Titre_contact {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
 }
-.Infos_fr{
-  margin-left:auto;
-  margin-right:auto;
+
+.Infos_fr {
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'Alegreya', serif;
-font-size: 16px;
-font-weight: 400;
-}
-.Infos_en
-{
-  margin-left:auto;
-  margin-right:auto;
-  font-family: 'Alegreya', serif;
-    font-size: 16px;
-    font-weight:400;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.Contact_fr
-{
-  margin-left:auto;
-  margin-right:auto;
+.Infos_en {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Alegreya', serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.Contact_fr {
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 500;
   font-size: 16px;
 }
 
-.Contact_en
-{
-
-  margin-left:auto;
-  margin-right:auto;
+.Contact_en {
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 500;
   font-size: 16px;
-
-
 }
 
-.separateur_contact
-{
-
-  margin-left:auto;
-  margin-right:auto;
-    font-weight: 900;
-    font-size: 14px;
+.separateur_contact {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 900;
+  font-size: 14px;
 }
