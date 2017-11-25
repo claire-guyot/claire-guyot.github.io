@@ -1,16 +1,21 @@
 /*Commentaires*/
 html * {
   box-sizing: border-box;
-    }
+
+
+
+  }
 
 body {
   margin:auto;
-  size:100
+background:
 }
 .ensemble{
   border-left:20px solid #222222;
   border-right:20px solid #222222;
+  min-height: 100vh;
 }
+
 .txt-en {
   display: none;
 }
