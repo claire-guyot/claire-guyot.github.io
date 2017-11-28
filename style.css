@@ -197,7 +197,7 @@ a {
 
 .bloc_texte_projets.ouvert .bouton::after {
   display: block;
-  content: "-";
+  content: "—";
   font-family: helvetica, sans-serif;
 
 }
