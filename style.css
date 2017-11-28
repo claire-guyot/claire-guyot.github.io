@@ -186,7 +186,7 @@ a {
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 40px;
   font-weight: 300;
-  cursor: url("images/curseurokpetit.png")30 15, pointer;
+  cursor: pointer;
 }
 
 .bloc_texte_projets .bouton::after {
@@ -220,7 +220,7 @@ a {
   position: absolute;
   right: 16px;
   top: 0;
-  cursor: cursor:url("images/curseurokpetit.png")30 0, pointer;
+  cursor: pointer;
 }
 
 .texte_projet_fr {
