@@ -192,11 +192,14 @@ a {
 .bloc_texte_projets .bouton::after {
   display: block;
   content: "+";
+  font-family: helvetica, sans-serif;
 }
 
 .bloc_texte_projets.ouvert .bouton::after {
   display: block;
   content: "-";
+  font-family: helvetica, sans-serif;
+
 }
 
 .bloc_texte_projets .contenu {
