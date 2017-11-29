@@ -6,7 +6,7 @@ html * {
 
 body {
   margin: auto;
-  background:
+  background-color: #fffffa;
 }
 
 .ensemble {
@@ -117,7 +117,7 @@ body.english .txt-fr {
 }
 
 .Projets_groupe_colonne {
-  flex: 0 0 25%;
+  flex: 1 0 25%;
 }
 
 .Projets_groupe_colonne .Projet_titre {
@@ -131,7 +131,7 @@ body.english .txt-fr {
   color: white;
   text-align: center;
   pointer-events: none;
-  padding: 16px;
+  padding: 10px;
   transition: .5s;
   margin: 0;
   font-family: 'Alegreya Sans', sans-serif;
@@ -310,4 +310,117 @@ a {
   margin-right: auto;
   font-weight: 900;
   font-size: 14px;
+}
+
+
+/*****************SMARTPHONE**********************/
+
+
+@media screen and (max-width: 1000px) {
+  .Projets_groupe_colonne {
+    flex: 0 0 33%;
+  }
+  .Projets_groupe_colonne .Projet_titre {
+    font-size:12px ;
+  }
+
+    .Contact_texte {
+      max-width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 700px)  {
+  .Projets_groupe_colonne {
+    flex: 0 0 50%;
+  }
+  .Projets_groupe_colonne .Projet_titre {
+    font-size:12px ;
+}
+.Contact_texte {
+  max-width: 60%;
+}
+
+.bloc_texte_projets .bouton {
+    display: none;
+
+}
+.bloc_texte_projets .contenu {
+    display: block;
+}
+
+.bloc_texte_projets {
+    width: 65%;
+    margin: auto;
+    max-width: 100%;
+    position: relative;
+    right: 0;
+    top:20px;
+    background-color: aliceblue;
+  }
+
+  .images_projets {
+    max-width: 100%;
+}
+
+.images_projets img {
+    max-width: 95%;
+    margin: 10px;
+  margin-top: 40px;}
+
+  .logo {
+      position: relative;
+    }
+
+    .Menu{
+      position: relative;
+
+    }
+
+@media screen and (max-width: 650px) {
+  .Projets_groupe_colonne {
+    flex: 0 0 50%;
+  }
+  .Projets_groupe_colonne .Projet_titre {
+    font-size:12px ;
+  }
+
+    .Contact_texte {
+      max-width: 70%;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+  .Projets_groupe_colonne {
+    flex: 0 0 100%;
+  }
+  .Projets_groupe_colonne .Projet_titre {
+    font-size:18px ;
+}
+.Contact_texte {
+  max-width: 90%;
+}
+
+}
+
+@media screen and (max-width: 300px) {
+  .Projets_groupe_colonne {
+    flex: 0 0 100%;
+  }
+  .Projets_groupe_colonne .Projet_titre {
+    font-size:18px ;
+}
+.Menu_index {
+  display: block;
+}
+.Menu{
+  display: block;
+}
+
+.Contact_texte {
+  max-width: 90%;
+}
+
 }
