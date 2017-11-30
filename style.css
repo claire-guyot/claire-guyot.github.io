@@ -10,8 +10,8 @@ body {
 }
 
 .ensemble {
-  border-left: 20px solid #222222;
-  border-right: 20px solid #222222;
+  border-left: 20px solid #333333;
+  border-right: 20px solid #333333;
   min-height: 100vh;
   z-index: 1000;
 }
@@ -402,7 +402,19 @@ a {
 .Contact_texte {
   max-width: 90%;
 }
-
+.Header {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.Menu_index {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.Menu{
+  margin-left: 30px;
+  margin-top: 5px;
+}
 }
 
 @media screen and (max-width: 300px) {
@@ -411,12 +423,6 @@ a {
   }
   .Projets_groupe_colonne .Projet_titre {
     font-size:18px ;
-}
-.Menu_index {
-  display: block;
-}
-.Menu{
-  display: block;
 }
 
 .Contact_texte {
