@@ -325,6 +325,14 @@ a {
 /*****************SMARTPHONE**********************/
 
 
+@media screen and (max-width: 1100px) {
+
+
+    .images_projets.etroit {
+      padding-right: 25%;
+    }
+
+}
 @media screen and (max-width: 1000px) {
   .Projets_groupe_colonne {
     flex: 0 0 33%;
@@ -337,7 +345,19 @@ a {
       max-width: 50%;
     }
 
+    .images_projets.etroit {
+      padding-right: 30%;
+    }
+
 }
+
+@media screen and (max-width: 900px) {
+
+
+    .images_projets.etroit {
+      padding-right: 40%;
+    }
+  }
 
 @media screen and (max-width: 700px)  {
   .Projets_groupe_colonne {
@@ -359,7 +379,7 @@ a {
 }
 
 .bloc_texte_projets {
-    width: 65%;
+    width: 85%;
     margin: auto;
     max-width: 100%;
     position: relative;
@@ -370,9 +390,11 @@ a {
 
   .images_projets {
     max-width: 100%;
-    padding-right: 0%;
 }
 
+.images_projets.etroit {
+  padding-right: 0%;
+}
 .images_projets img {
     max-width: 95%;
     margin: 10px;
