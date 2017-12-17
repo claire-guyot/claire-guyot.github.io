@@ -181,7 +181,7 @@ a {
   display: block;
   position: fixed;
   top: 160px;
-  left: 60%;
+  left: 92%;
   margin: 10px;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 40px;
@@ -250,7 +250,7 @@ a {
 }
 
 .images_projets img {
-  max-width: 60%;
+  max-width: 95%;
   margin: 10px;
 }
 
