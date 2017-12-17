@@ -370,6 +370,7 @@ a {
 
   .images_projets {
     max-width: 100%;
+    padding-right: 0%;
 }
 
 .images_projets img {
