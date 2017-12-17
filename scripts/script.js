@@ -1,12 +1,14 @@
 
   var bouton = document.querySelector('.bouton');
   var contenu = document.querySelector('.bloc_texte_projets');
+  var images = document.querySelector('.images_projets');
   var langFr = document.querySelector('.lang-fr');
   var langEn = document.querySelector('.lang-en');
 
   if (bouton !== null) {
     bouton.addEventListener('click', function() {
       contenu.classList.toggle('ouvert');
+      images.classList.toggle('etroit');
     });
   }
 
