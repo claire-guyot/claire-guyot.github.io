@@ -48,3 +48,15 @@
       a.setAttribute('href', a.getAttribute('href').replace('#en', ''));
     });
   }
+
+  var couleurs = [
+    'aliceblue',
+    'lightyellow',
+    'honeydew',
+    'lavenderblush',
+  ];
+  var bloc_contenu = document.querySelector('.contenu');
+
+  if (bloc_contenu) {
+    bloc_contenu.style.background = couleurs[Math.floor(Math.random() * couleurs.length)];
+  }

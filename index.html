@@ -90,5 +90,69 @@
   </footer>
 </div>
   <script src="scripts/script.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    var windowSize = -1;
+    var nColonnes = 4;
+    var projets = document.querySelectorAll('.Projet');
+    var colonnes = document.querySelectorAll('.Projets_groupe_colonne');
+
+    function getWindowSize() {
+      windowSize = window.innerWidth;
+    };
+
+    getWindowSize();
+    handleWindowSize();
+    dimensionColonnes();
+    window.addEventListener('resize', function() {
+      getWindowSize();
+      handleWindowSize();
+    });
+
+    function dimensionColonnes() {
+      var usefulColumns = Array.from(colonnes).slice(0, nColonnes);
+      var projectsArray = Array.from(projets);
+      var nColumns = usefulColumns.length;
+      var nProjects = projectsArray.length;
+      var nProjByColumn =  Math.round((nProjects % 2 === 0 ? nProjects : nProjects + 1) / nColumns);
+      var currentColumn = 0;
+      projectsArray.forEach(function(projet, index) {
+        if (index !== 0 && index % nProjByColumn === 0) {
+          currentColumn += 1;
+        }
+        usefulColumns[currentColumn].appendChild(projet);
+      });
+    }
+
+    function handleWindowSize() {
+      if (windowSize > 1000) {
+        if (nColonnes !== 4) {
+          nColonnes = 4;
+          dimensionColonnes();
+        }
+        return;
+      }
+      if (windowSize < 1000 && windowSize > 700) {
+        if (nColonnes !== 3) {
+          nColonnes = 3;
+          dimensionColonnes();
+        }
+        return;
+      }
+      if (windowSize < 700 && windowSize > 400) {
+        if (nColonnes !== 2) {
+          nColonnes = 2;
+          dimensionColonnes();
+        }
+        return;
+      }
+      if (windowSize < 400) {
+        if (nColonnes !== 1) {
+          nColonnes = 1;
+          dimensionColonnes();
+        }
+        return;
+      }
+    }
+  </script>
 </body>
 </html>
