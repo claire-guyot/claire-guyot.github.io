@@ -176,7 +176,7 @@ a {
   position: fixed;
   top: 80px;
   right: 80px;
-  padding: 16px;
+
 }
 
 .bloc_texte_projets .bouton {
@@ -195,6 +195,7 @@ a {
   display: block;
   content: "+";
   font-family: helvetica, sans-serif;
+  background: none;
 }
 
 .bloc_texte_projets.ouvert .bouton::after {
@@ -210,8 +211,7 @@ a {
 
 .bloc_texte_projets.ouvert .contenu {
   display: block;
-  background-color: aliceblue;
-  padding: 10px;
+  padding: 26px;
 }
 
 .titre_page_projet {
@@ -376,6 +376,7 @@ a {
 }
 .bloc_texte_projets .contenu {
     display: block;
+    padding: 26px;
 }
 
 .bloc_texte_projets {
@@ -385,7 +386,6 @@ a {
     position: relative;
     right: 0;
     top:20px;
-    background-color: aliceblue;
   }
 
   .images_projets {

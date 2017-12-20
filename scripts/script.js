@@ -55,7 +55,7 @@
     'honeydew',
     'lavenderblush',
   ];
-  var bloc_contenu = document.querySelector('.contenu');
+  var bloc_contenu = document.querySelector('.bloc_texte_projets');
 
   if (bloc_contenu) {
     bloc_contenu.style.background = couleurs[Math.floor(Math.random() * couleurs.length)];
