@@ -254,7 +254,7 @@ a {
 .images_projets.etroit {
   margin: auto;
   max-width: 750px;
-  padding-right: 20%;
+  padding-right: 24%;
 }
 
 
@@ -329,7 +329,7 @@ a {
 
 
     .images_projets.etroit {
-      padding-right: 25%;
+      padding-right: 32%;
     }
 
 }
@@ -346,7 +346,7 @@ a {
     }
 
     .images_projets.etroit {
-      padding-right: 30%;
+      padding-right: 37%;
     }
 
 }
@@ -355,7 +355,7 @@ a {
 
 
     .images_projets.etroit {
-      padding-right: 40%;
+      padding-right: 42%;
     }
   }
 
@@ -398,7 +398,7 @@ a {
 .images_projets img {
     max-width: 95%;
     margin: 10px;
-  margin-top: 40px;}
+  margin-top: 42px;}
 
   .logo {
       position: relative;
