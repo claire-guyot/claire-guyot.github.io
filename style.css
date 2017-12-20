@@ -7,6 +7,8 @@ html * {
 body {
   margin: auto;
   background-color: #fffffa;
+  max-width: 1500px;
+
 }
 
 .ensemble {
@@ -145,13 +147,18 @@ z-index: 1000;
 .Projet {
   padding: 20px;
   position: relative;
+  display: flex;
+  justify-content: center;
+
 }
 
 .Projet:hover .Projet_titre {
   opacity: 1;
 }
 
-.Projet_titre {}
+.Projet_titre {
+
+}
 
 .Projet_vignette {
   max-width: 100%;
@@ -177,16 +184,16 @@ a {
   top: 80px;
   right: 80px;
 
+
 }
 
 .bloc_texte_projets .bouton {
   display: block;
   position: fixed;
-  top: 160px;
-  left: 92%;
+  top: 80px;
+  left: 90%;
   margin: 10px;
   font-family: 'Alegreya Sans', sans-serif;
-  font-size: 40px;
   font-weight: 300;
   cursor: pointer;
 }
@@ -194,13 +201,14 @@ a {
 .bloc_texte_projets .bouton::after {
   display: block;
   content: "+";
+  font-size: 30px;
   font-family: helvetica, sans-serif;
-  background: none;
 }
 
 .bloc_texte_projets.ouvert .bouton::after {
   display: block;
   content: "-";
+  font-size: 40px;
   font-family: helvetica, sans-serif;
 
 }
@@ -462,4 +470,75 @@ a {
   max-width: 90%;
 }
 
+}
+
+
+@media screen and (min-width: 2000px) {
+
+  .Header {
+    height: 250px;
+  }
+
+  .logo {
+    height: 130px;
+    margin-top: 50px;
+    left:1500px;
+  }
+
+  .logo_index {
+    height: 130px;
+    margin-top: 50px;
+  }
+
+  .Menu {
+    height: 130px;
+    font-size: 40px;
+    margin-top: 50px;
+
+  }
+
+
+
+  .Menu_index {
+    height: 130px;
+    font-size: 40px;
+    margin-top: 50px;
+  }
+
+
+
+
+  .Projets_groupe_colonne .Projet_titre {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 25px;
+    right: 20px;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    pointer-events: none;
+    padding: 10px;
+    transition: .5s;
+    margin: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Projet {
+    padding: 20px;
+
+  }
+
+
+
+  .Projet_vignette {
+    max-width: 100%;
+    height: auto;
+  }
 }
