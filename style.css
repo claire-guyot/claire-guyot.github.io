@@ -121,7 +121,7 @@ z-index: 1000;
   flex: 1 0 25%;
 }
 
-.Projets_groupe_colonne .Projet_titre {
+.Projet .Projet_titre {
   position: absolute;
   top:20px;
   left:20px;
@@ -141,13 +141,12 @@ z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .Projet {
   padding: 20px;
   position: relative;
-  display: flex;
   justify-content: center;
 
 }
@@ -179,12 +178,12 @@ a {
 
 
 .bloc_texte_projets {
-  width: 30%;
-  max-width: 400px;
+  width: 100%;
+  max-width: 32%;
   margin: 10px;
   position: fixed;
-  top: 80px;
-  right: 80px;
+  top: 30%;
+  right: 5%;
 
 
 }
@@ -192,7 +191,7 @@ a {
 .bloc_texte_projets .bouton {
   display: block;
   position: fixed;
-  top: 80px;
+  top: 35%;
   left: 90%;
   margin: 10px;
   font-family: 'Alegreya Sans', sans-serif;
@@ -210,7 +209,7 @@ a {
 .bloc_texte_projets.ouvert .bouton::after {
   display: block;
   content: "-";
-  font-size: 40px;
+  font-size: 30px;
   font-family: helvetica, sans-serif;
 
 }
@@ -258,12 +257,12 @@ a {
 
 .images_projets {
   margin: auto;
-  max-width: 750px;
+  max-width: 60%;
 }
 
 .images_projets.etroit {
   margin: auto;
-  max-width: 750px;
+  max-width: 60%;
   padding-right: 24%;
 }
 
@@ -474,12 +473,11 @@ a {
 
 }
 
-
-@media screen and (min-width: 1500px) {
-
+@media screen and (min-width: 1200px) {
 
 
-  .Projets_groupe_colonne .Projet_titre {
+
+  .Projet .Projet_titre {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -494,7 +492,7 @@ a {
     transition: .5s;
     margin: 0;
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     display: flex;
     justify-content: center;
@@ -509,9 +507,235 @@ a {
     min-width: 100%;
     height: auto;
   }
+
+
+
+
+  .Contact_texte {
+
+    padding: 40px;
+  }
+
+
+  .Titre_contact {
+    font-size: 30px;
+  }
+
+  .Infos_fr {
+
+    font-size: 30px;
+  }
+
+  .Infos_en {
+
+    font-size: 30px;
+  }
+
+  .Contact_fr {
+
+    font-size: 30px;
+  }
+
+  .Contact_en {
+
+    font-size: 30px;
+  }
+
+  .separateur_contact {
+
+    font-size: 20px;
+  }
+
+  .images_projets{
+    max-width: 60%;
+  }
+
+  .images_projets img{
+    min-width: 95%;
+  }
+  .images_projets{
+    max-width: 60%;
+  }
+
+  .images_projets img{
+    min-width: 95%;
+  }
+  .bloc_texte_projets .bouton {
+   top: 25%;
+    left: 90%;
+
+  }
+  .bloc_texte_projets .bouton::after{
+    font-size: 30px;
+  }
+
+
+  .bloc_texte_projets.ouvert .bouton::after {
+    font-size: 30px;
+
+  }
+
+  .bloc_texte_projets{
+    width: 30%;
+      max-width: 30%;
+      margin: 10px;
+      position: fixed;
+      top: 25%;
+      right: 7%;
+    }
+
+    .bloc_texte_projets.ouvert .contenu{
+      padding: 30px;
+    }
+
+    .texte_projet_fr{
+      font-size: 15px;
+    }
+    .texte_projet_en{
+      font-size: 15px;
+    }
+    .titre_page_projet{
+      font-size: 15px;
+
+    }
+
+    .separateur_projets{
+      font-size: 13px;
+    }
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1700px) {
+
+
+
+  .Projet .Projet_titre {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 25px;
+    right: 20px;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    pointer-events: none;
+    padding: 10px;
+    transition: .5s;
+    margin: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  .Projet_vignette {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+  }
+
+
+
+
+  .Contact_texte {
+
+    padding: 40px;
+  }
+
+
+  .Titre_contact {
+    font-size: 30px;
+  }
+
+  .Infos_fr {
+
+    font-size: 30px;
+  }
+
+  .Infos_en {
+
+    font-size: 30px;
+  }
+
+  .Contact_fr {
+
+    font-size: 30px;
+  }
+
+  .Contact_en {
+
+    font-size: 30px;
+  }
+
+  .separateur_contact {
+
+    font-size: 20px;
+  }
+
+  .images_projets{
+    max-width: 60%;
+  }
+
+  .images_projets img{
+    min-width: 95%;
+  }
+  .images_projets{
+    max-width: 60%;
+  }
+
+  .images_projets img{
+    min-width: 95%;
+  }
+  .bloc_texte_projets .bouton {
+   top: 25%;
+    left: 90%;
+
+  }
+  .bloc_texte_projets .bouton::after{
+    font-size: 60px;
+  }
+
+
+  .bloc_texte_projets.ouvert .bouton::after {
+    font-size: 60px;
+
+  }
+
+  .bloc_texte_projets{
+    width: 30%;
+      max-width: 30%;
+      margin: 10px;
+      position: fixed;
+      top: 25%;
+      right: 7%;
+    }
+
+    .bloc_texte_projets.ouvert .contenu{
+      padding: 50px;
+    }
+
+    .texte_projet_fr{
+      font-size: 22px;
+    }
+    .texte_projet_en{
+      font-size: 22px;
+    }
+    .titre_page_projet{
+      font-size: 22px;
+
+    }
+
+    .separateur_projets{
+      font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 2700px) {
 
   .Header {
     height: 250px;
@@ -542,36 +766,88 @@ a {
     margin-top: 50px;
   }
 
-
-
-
-  .Projets_groupe_colonne .Projet_titre {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    bottom: 25px;
-    right: 20px;
-    opacity: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: center;
-    pointer-events: none;
-    padding: 10px;
-    transition: .5s;
-    margin: 0;
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .Projet {
-    padding: 20px;
+    padding: 40px;
+}
+  .Contact_texte {
 
+    padding: 70px;
   }
 
 
+  .Titre_contact {
+    font-size: 55px;
+  }
 
+  .Infos_fr {
+
+    font-size: 55px;
+  }
+
+  .Infos_en {
+
+    font-size: 55px;
+  }
+
+  .Contact_fr {
+
+    font-size: 55px;
+  }
+
+  .Contact_en {
+
+    font-size: 55px;
+  }
+
+  .separateur_contact {
+
+    font-size: 50px;
+  }
+
+
+.images_projets{
+  max-width: 60%;
+}
+
+.images_projets img{
+  min-width: 95%;
+}
+
+.bloc_texte_projets .bouton::after{
+  font-size: 100px;
+}
+
+
+.bloc_texte_projets.ouvert .bouton::after {
+  font-size: 100px;
+
+}
+
+.bloc_texte_projets{
+  width: 30%;
+    max-width: 30%;
+    margin: 10px;
+    position: fixed;
+    top: 25%;
+    right: 7%;
+  }
+
+  .bloc_texte_projets.ouvert .contenu{
+    padding: 50px;
+  }
+
+  .texte_projet_fr{
+    font-size: 55px;
+  }
+  .texte_projet_en{
+    font-size: 55px;
+  }
+  .titre_page_projet{
+    font-size: 55px;
+
+  }
+
+  .separateur_projets{
+    font-size: 50px;
+  }
 }
