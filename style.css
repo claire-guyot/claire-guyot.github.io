@@ -7,7 +7,6 @@ html * {
 body {
   margin: auto;
   background-color: #fffffa;
-  max-width: 1500px;
 
 }
 
@@ -124,17 +123,17 @@ z-index: 1000;
 
 .Projets_groupe_colonne .Projet_titre {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  bottom: 25px;
-  right: 20px;
+  top:20px;
+  left:20px;
+  right:20px;
+  bottom:25px;
   opacity: 0;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
   pointer-events: none;
-  padding: 10px;
   transition: .5s;
+  padding:10px;
   margin: 0;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 18px;
@@ -154,6 +153,7 @@ z-index: 1000;
 
 .Projet:hover .Projet_titre {
   opacity: 1;
+
 }
 
 .Projet_titre {
@@ -482,7 +482,6 @@ a {
   .logo {
     height: 130px;
     margin-top: 50px;
-    left:1500px;
   }
 
   .logo_index {
@@ -538,7 +537,13 @@ a {
 
 
   .Projet_vignette {
-    max-width: 100%;
+    min-width: 20vw;
     height: auto;
   }
 }
+
+@media screen and (min-width: 4000Px) {
+
+  .Header {
+    height: 500px;
+  }

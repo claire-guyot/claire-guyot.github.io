@@ -64,5 +64,5 @@
 
   if(window.location.href.indexOf('claireguyot.fr') !== -1){
     var link = document.querySelector('[href="style.css"]');
-    link.setAttribute('href', 'style.prefixe.css')
+    link.setAttribute('href', 'style.prefixe.css');
   }
