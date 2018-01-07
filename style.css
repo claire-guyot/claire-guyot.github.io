@@ -766,6 +766,16 @@ a {
     margin-top: 50px;
   }
 
+  .Projet .Projet_titre {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    bottom: 45px;
+    right: 40px;
+
+    font-size: 60px;
+
+  }
   .Projet {
     padding: 40px;
 }
