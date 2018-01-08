@@ -330,7 +330,15 @@ a {
   font-size: 14px;
 }
 
-
+.mentions{
+  display: block;
+  position: absolute;
+  left: 90%;
+  bottom: 2%;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 600;
+  font-size: 8px;
+}
 /*****************SMARTPHONE**********************/
 
 
@@ -518,32 +526,32 @@ a {
 
 
   .Titre_contact {
-    font-size: 30px;
+    font-size: 16px;
   }
 
   .Infos_fr {
 
-    font-size: 30px;
+    font-size: 16px;
   }
 
   .Infos_en {
 
-    font-size: 30px;
+    font-size: 16px;
   }
 
   .Contact_fr {
 
-    font-size: 30px;
+    font-size: 16px;
   }
 
   .Contact_en {
 
-    font-size: 30px;
+    font-size: 16px;
   }
 
   .separateur_contact {
 
-    font-size: 20px;
+    font-size: 13px;
   }
 
   .images_projets{
