@@ -29,6 +29,15 @@
 
   <section class="Projets_groupe">
     <div class="Projets_groupe_colonne">
+
+
+      <div class="Projet">
+        <h4 class="Projet_titre">Typographie - Travail en cours</h4>
+        <a href="projets/typo.html">
+          <img class="Projet_vignette" src="imagesvignettes/typo_hd1.jpg" srcset="imagesvignettes/typo_hd.jpg 2x" alt=""> </a>
+      </div>
+
+
       <div class="Projet">
         <nav>
           <div class="Projet_titre "><h4>Foie Gras</h4></div>
@@ -37,33 +46,17 @@
       </div>
 
       <div class="Projet">
-        <h4 class="Projet_titre">Nébuleuses</h4>
-        <a href="projets/nebuleuses.html" >
-    <img class="Projet_vignette" src="imagesvignettes/nebuleuses_hd1.jpg" srcset="imagesvignettes/nebuleuses_hd.jpg 2x" alt=""> </a>
-      </div>
-
-    </div>
-
-
-
-    <div class="Projets_groupe_colonne">
-      <div class="Projet">
-        <h4 class="Projet_titre">Coluche</h4>
-        <a href="projets/coluche.html">
-
-      <img class="Projet_vignette" src="imagesvignettes/coluche_hd1.jpg" srcset="imagesvignettes/coluche_hd.jpg 2x" alt=""> </a>
-      </div>
-
-      <div class="Projet">
-        <h4 class="Projet_titre">In Cold Blood</h4>
-        <a href="projets/incoldblood.html" >
-          <img class="Projet_vignette" src="imagesvignettes/incoldblood_hd1.jpg" srcset="imagesvignettes/incoldblood_hd.jpg "  alt=""> </a>
+        <h4 class="Projet_titre">Ghyston's</h4>
+        <a href="projets/ghystons.html">
+          <img class="Projet_vignette" src="imagesvignettes/ghystons_hd1.jpg" srcset="imagesvignettes/ghystons_hd.jpg 2x" alt=""> </a>
       </div>
 
 
 
 
     </div>
+
+
 
     <div class="Projets_groupe_colonne">
 
@@ -73,6 +66,22 @@
     <img class="Projet_vignette" src="imagesvignettes/planetarium_hd1.jpg" srcset="imagesvignettes/planetarium_hd.jpg 2x" alt=""> </a>
       </div>
 
+
+      <div class="Projet">
+        <h4 class="Projet_titre">Nébuleuses</h4>
+        <a href="projets/nebuleuses.html" >
+    <img class="Projet_vignette" src="imagesvignettes/nebuleuses_hd1.jpg" srcset="imagesvignettes/nebuleuses_hd.jpg 2x" alt=""> </a>
+      </div>
+      <div class="Projet">
+        <h4 class="Projet_titre">Carte de vœux</h4>
+        <a href="projets/cartevoeux.html" >
+          <img class="Projet_vignette" src="imagesvignettes/cartevoeux_hd1.jpg" srcset="imagesvignettes/cartevoeux_hd.jpg 2x" alt=""> </a>
+      </div>
+
+    </div>
+
+    <div class="Projets_groupe_colonne">
+
       <div class="Projet">
         <h4 class="Projet_titre">Saint-John Perse</h4>
         <a href="projets/saintjohnperse.html" >
@@ -80,25 +89,35 @@
       </div>
 
 
-    </div>
 
-    <div class="Projets_groupe_colonne">
-
-      <div class="Projet">
-        <h4 class="Projet_titre">Carte de vœux</h4>
-        <a href="projets/cartevoeux.html" >
-          <img class="Projet_vignette" src="imagesvignettes/cartevoeux_hd1.jpg" srcset="imagesvignettes/cartevoeux_hd.jpg 2x" alt=""> </a>
-      </div>
-      <div class="Projet">
-        <h4 class="Projet_titre">Typographie - Travail en cours</h4>
-        <a href="projets/typo.html">
-          <img class="Projet_vignette" src="imagesvignettes/typo_hd1.jpg" srcset="imagesvignettes/typo_hd.jpg 2x" alt=""> </a>
-      </div>
       <div class="Projet">
         <h4 class="Projet_titre">Jeu des 7 familles</h4>
         <a href="projets/cartes.html">
           <img class="Projet_vignette" src="imagesvignettes/cartes_hd1.jpg" srcset="imagesvignettes/cartes_hd.jpg 2x" alt=""> </a>
       </div>
+
+
+    </div>
+
+    <div class="Projets_groupe_colonne">
+      <div class="Projet">
+        <h4 class="Projet_titre">In Cold Blood</h4>
+        <a href="projets/incoldblood.html" >
+          <img class="Projet_vignette" src="imagesvignettes/incoldblood_hd1.jpg" srcset="imagesvignettes/incoldblood_hd.jpg "  alt=""> </a>
+      </div>
+      <div class="Projet">
+        <h4 class="Projet_titre">Coluche</h4>
+        <a href="projets/coluche.html">
+
+      <img class="Projet_vignette" src="imagesvignettes/coluche_hd1.jpg" srcset="imagesvignettes/coluche_hd.jpg 2x" alt=""> </a>
+      </div>
+
+
+
+
+
+
+
 
     </div>
   </section>
@@ -129,7 +148,7 @@
       var projectsArray = Array.from(projets);
       var nColumns = usefulColumns.length;
       var nProjects = projectsArray.length;
-      var nProjByColumn =  Math.round((nProjects % 3 === 0 ? nProjects : nProjects + 1) / nColumns);
+      var nProjByColumn =  Math.round((nProjects % 2 === 0 ? nProjects : nProjects + 1) / nColumns);
       var currentColumn = 0;
       projectsArray.forEach(function(projet, index) {
         if (index !== 0 && index % nProjByColumn === 0) {
@@ -147,6 +166,7 @@
         }
         return;
       }
+
       if (windowSize < 1000 && windowSize > 700) {
         if (nColonnes !== 3) {
           nColonnes = 3;
