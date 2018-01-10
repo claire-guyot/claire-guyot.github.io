@@ -59,8 +59,3 @@
   if (bloc_contenu) {
     bloc_contenu.style.background = couleurs[Math.floor(Math.random() * couleurs.length)];
   }
-  
-  if(window.location.href.indexOf('claireguyot.fr') !== -1){
-    var link = document.querySelector('[href="style.css"]');
-    link.setAttribute('href', 'style.prefixe.css')
-  }
