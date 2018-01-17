@@ -151,10 +151,7 @@
       var nProjByColumn =  Math.round((nProjects % 2 === 0 ? nProjects : nProjects + 1) / nColumns);
       var currentColumn = 0;
       projectsArray.forEach(function(projet, index) {
-        if (index !== 0 && index % nProjByColumn === 0) {
-          currentColumn += 1;
-        }
-        usefulColumns[currentColumn].appendChild(projet);
+        usefulColumns[index % nColumns].appendChild(projet);
       });
     }
 
