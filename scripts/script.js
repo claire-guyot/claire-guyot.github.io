@@ -50,7 +50,7 @@
   }
 
   var couleurs = [
-    'aliceblue',
+    'azure',
     'lightyellow',
     'honeydew',
     'lavenderblush',
