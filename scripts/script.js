@@ -23,12 +23,12 @@
 
   function setFrench() {
     document.body.classList.remove('english');
-    removeEnglishUrlFragment();
+     removeEnglishUrlFragment();
   }
 
   function setEnglish() {
     document.body.classList.add('english');
-    addEnglishUrlFragment();
+     addEnglishUrlFragment();
   }
 
   function addEnglishUrlFragment() {
@@ -49,11 +49,20 @@
     });
   }
 
+
   var couleurs = [
-    'azure',
+/*    'rgb(11, 0, 68)',
+    'rgb(255, 126, 126)',
+    'rgb(36, 0, 69)',
+    'rgb(61, 0, 46)',$/
+  /*  'azure',
     'lightyellow',
     'honeydew',
-    'lavenderblush',
+    'lavenderblush',*/
+    'DarkRed',
+    'DarkGoldenRod',
+    'Teal',
+
   ];
   var bloc_contenu = document.querySelector('.bloc_texte_projets');
   if (bloc_contenu) {

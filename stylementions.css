@@ -1,8 +1,5 @@
 html{
-  max-width: 60%;
-display: block;
-margin: auto;
-margin-top: 50px;
+
 }
 
 .mentionslegales{
@@ -10,6 +7,10 @@ margin-top: 50px;
   font-size: 15px;
   font-weight: 400;
 padding: 40px;
+max-width: 60%;
+display: block;
+margin: auto;
+margin-top: 50px;
 }
 
 .titrementions{
