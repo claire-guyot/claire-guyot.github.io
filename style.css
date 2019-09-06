@@ -84,14 +84,14 @@ body.english .txt-fr {
   max-width:15%;
   max-height: 200%;
 margin-top: 15px;
+padding-left: 7%;
 }
 
 .logo_texte{
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  padding-left: 10px;
-
+padding-left: 10px;
 
 }
 
